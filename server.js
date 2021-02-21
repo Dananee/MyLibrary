@@ -1,6 +1,8 @@
 const { static } = require("express");
-require("dotenv").config();
 
+if(process.env.NODE_ENV !== 'production'){
+  require('dotenv').parse()
+}
 const mongoose = require("mongoose");
 
 const express = require("express");
