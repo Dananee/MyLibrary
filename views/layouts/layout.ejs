@@ -9,11 +9,12 @@
 </head>
 
 <body>
-   <p> Before</p>
-    <br>
-    <p>  <%- body %> </p>
-   <br>
-     <p>After</p>
+    <%- include('../partials/headers.ejs') %> 
+    <%- include("../partials/errorMessage.ejs") %> 
+
+    
+      <%- body %>  
+
 </body>
 
 </html>
